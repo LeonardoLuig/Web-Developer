@@ -1,0 +1,167 @@
+/*Formatação Geral do site*/
+*{
+    margin: 0;
+    padding: 0;
+}
+/*********Formatação body***********/
+
+body{
+    background: url(../imagens/fundo.jpg) no-repeat;
+    background-attachment: fixed;
+    z-index: 0;
+}
+
+
+
+/*********Formatação topo***********/
+#topo{
+    background-color: #f0ffff;
+    border-bottom: 3px solid #CCC;
+    background-attachment: fixed;
+    padding: 1%;
+}
+
+
+#logo-topo{
+    float: left;
+    margin: 0;
+    width: 30%;
+}
+
+#menu{
+    width: 39%;
+    padding: 0.5%;
+    float: right;
+    margin-top: 1.38%;
+    text-align: right;
+}
+
+#menu ul{
+    text-align: right;
+}
+
+#menu ul li{
+    display: inline-block;
+    padding: 5px 10px 5px 10px;
+    
+}
+
+#menu ul li a{
+    text-decoration: none;
+    color: black;
+    padding: 8px;
+    border-radius: 10px;
+    text-transform: uppercase;
+    font-size: 15px;
+}
+
+#pagina-inicial #menu .Inicio a,
+#pagina-sec #menu #Produtos,
+#pagina-terc #menu #sobre,
+#pagina-quar #menu #p-contato{
+    background-color: black;
+    color: white;
+}
+
+#menu ul a:hover{
+    background-color: black;
+    color: white;
+}
+
+#titulo{
+    width: 25%;
+    margin: 0 auto;
+    float: left;
+    margin-top: 0;
+    margin-left: 4%;
+    text-align: left;
+}
+
+#titulo h1{
+    width: 100%;
+}
+
+.clear{
+    clear: both;
+}
+/****************************************/
+/********Conteudo-lateral contato********/
+#contato{
+    position: fixed;
+    padding: 10px;
+    width: 5%;
+    margin-top: 4%;
+}
+#contato ul li{
+    padding: 10px;
+    list-style: none;
+    padding: 2%;
+    padding-bottom: 20%;
+}
+
+#contato a{
+    text-decoration: none;
+}
+
+#contato img{
+    transition: .2s;
+}
+
+#contato img:hover{
+    transform: scale(1.2);
+}
+
+
+/**********************************************/
+/**************Conteudo-Principal**************/
+#align{
+    width: 90%;
+    margin: 0 auto;
+    background-color: black;
+    padding-bottom: 5%;
+    padding-top: 5%;
+}
+
+#conteudo-principal{
+    width: 70%;
+    margin: 0 auto;
+    background-color: #f0ffff;
+    border-right: 5px solid #CCC;
+    border-bottom: 5px solid #CCC;  
+    border-radius: 8px;
+    padding: 2%;
+    
+}
+
+#slides{
+    width: 74%;
+    background-color: #f0ffff;
+    margin: 0 auto;
+    margin-top: 5%;
+    text-align: center;
+    height: 500px;
+    border-radius: 8px;
+    border-right: 5px solid #CCC;
+    border-bottom: 5px solid #CCC; 
+}
+
+#slide{
+    height: 500px;
+    animation: pass-slide-automatic 8s steps(1) infinite;
+}
+
+@keyframes pass-slide-automatic{
+    0% {background: url(../imagens/cidade1.jpg) no-repeat center; background-size: 90%;}
+    50% {background: url(../imagens/cidade2.jpg) no-repeat center; background-size: 90%;}
+    100% {background: url(../imagens/cidade3.jpg) no-repeat center; background-size: 90%;}
+}
+
+/**********************************************/
+/*********************Rodape*******************/
+
+#rodape{
+    background-color: #f0ffff;
+    text-align: center;
+    padding: 2%;
+    border-top: 3px solid #ccc;
+}
